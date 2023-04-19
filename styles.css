@@ -4,10 +4,13 @@ body {
     color: darkslateblue;
 }
 
-h1 {
-    text-decoration: underline;
+.list {
+    list-style-type: fish;
+    color: darkslateblue;
 }
 
-.list {
-    color: darkslateblue;
+@counter-style fish {
+    system: cyclic;
+    symbols: "\1F41F" "\1F420" "\1F421" "\1F988" "\1F419" "\1F42C";
+    suffix: " ";
 }
