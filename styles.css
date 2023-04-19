@@ -4,7 +4,7 @@ body {
     color: darkslateblue;
 }
 
-.list {
+list {
     list-style-type: fish;
     color: darkslateblue;
 }
