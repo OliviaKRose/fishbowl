@@ -11,6 +11,7 @@ ol {
 
 @counter-style fish {
     system: cyclic;
-    symbols: "\1F41F" "\1F420" "\1F421" "\1F988" "\1F419" "\1F42C";
+    symbols: "\1F41F" "\1F421" "\1F988" "\1F419" "\1F420" "\1F42C";
     suffix: " ";
 }
+
