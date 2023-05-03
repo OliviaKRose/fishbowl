@@ -8,10 +8,10 @@ window.addEventListener(
             fetch(`https://api.giphy.com/v1/gifs/random?tag=fish&api_key=${apiKey}&rating=g`).then(async function (response) {
                 const gif = await response.json();
                 const gifLink = gif.data.embed_url
-                const el = document.getElementById('homeOfGIFs')
-                const spn = document.createElement("span")
-                spn.innerHTML = `<iframe src=${gifLink}>`
-                el.appendChild(spn)
+                const gifHome = document.getElementById('homeOfGIFs')
+                const gifHolder = document.createElement("span")
+                gifHolder.innerHTML = `<iframe src=${gifLink}>`
+                gifHome.appendChild(gifHolder)
             });
         });
     }
