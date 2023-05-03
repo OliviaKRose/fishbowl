@@ -9,7 +9,9 @@ window.addEventListener(
                 const gif = await response.json();
                 const gifLink = gif.data.embed_url
                 const el = document.getElementById('homeOfGIFs')
-                el.innerHTML += `<iframe src=${gifLink}>`
+                const spn = document.createElement("span")
+                spn.innerHTML = `<iframe src=${gifLink}>`
+                el.appendChild(spn)
             });
         });
     }
